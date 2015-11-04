@@ -8,16 +8,27 @@ body, head, h1, figure, ul, li {
   text-align: inherit;
   background: transparent;
   color: inherit;
+  font-family: sans-serif;
+  list-style: none;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 h1 {
-  color: blue;
   font-size: 36px;
   text-align: center;
+  padding: 10px 0px;
 }
 
 .ttt-game {
-
+  border: 5px solid black;
+  width: 300px;
+  margin: auto;
+  background: orange;
 }
 
 .ttt-grid {
@@ -25,5 +36,62 @@ h1 {
 }
 
 .ttt-grid > li {
+  float: left;
+  border: 5px solid black;
+  width: 65px;
+  height: 70px;
+  padding: 20px 0px 0px 25px;
+}
 
+.ttt-grid > li:hover {
+  background: yellow;
+  cursor: pointer;
+}
+
+.x {
+  background: white;
+}
+
+.o {
+  background: white;
+}
+
+
+.x:before {
+  content: "X";
+  text-align: center;
+  font-size: 48px;
+}
+
+.o:before {
+  content: "O";
+  text-align: center;
+  font-size: 48px;
+}
+
+.message {
+  display: none;
+}
+
+.winner_o {
+  padding: 20px;
+  text-align: center;
+  display: block;
+}
+
+.winner_x {
+  padding: 20px;
+  text-align: center;
+  display: block;
+}
+
+
+.winner_o:before {
+  content: "Congratulations! Winner is O.";
+  color: black;
+}
+
+.winner_x:before {
+  content: "Congratulations! Winner is X.";
+  color: black;
 }

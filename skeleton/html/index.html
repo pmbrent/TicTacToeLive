@@ -8,21 +8,12 @@
   <body>
     <h1>Tic-Tac-Toe</h1>
     <figure class="ttt-game" id="game-1">
-      <ul class="ttt-grid">
-        <li></li>
-        <li></li>
-        <li></li>
 
-        <li></li>
-        <li></li>
-        <li></li>
 
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
     </figure>
 
+    <strong class="message">
+    </strong>
 
     <script src="../js/jquery-2.1.1.js"></script>
     <!-- Whackjobs at GithubPages don't understand symlinks... -->
@@ -30,7 +21,10 @@
     <script src="../js/ttt-view.js"></script>
 
     <script>
-      // Write your code here.
+    (function() {
+      var game = new TTT.Game();
+      var view = new TTT.View(game, $("#game-1"));
+    })();
     </script>
   </body>
 </html>
