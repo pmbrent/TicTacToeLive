@@ -1,0 +1,29 @@
+body, head, h1, figure, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  font: inherit;
+  text-decoration: inherit;
+  text-align: inherit;
+  background: transparent;
+  color: inherit;
+}
+
+h1 {
+  color: blue;
+  font-size: 36px;
+  text-align: center;
+}
+
+.ttt-game {
+
+}
+
+.ttt-grid {
+
+}
+
+.ttt-grid > li {
+
+}
